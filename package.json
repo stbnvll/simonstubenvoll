@@ -1,0 +1,21 @@
+{
+  "name": "simonstubenvoll",
+  "version": "1.0.0",
+  "description": "My personal website built with 11ty.",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stbnvll/simonstubenvoll"
+  },
+  "author": {
+    "name": "Simon Stubenvoll",
+    "url": "https://simonstubenvoll.de"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
