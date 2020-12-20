@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/theme.css' | url }}">
+  </head>
+
+  <body>
+    <main class="main container" role="main">
+      {{ content | safe }}
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
