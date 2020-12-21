@@ -28,6 +28,7 @@
   font-weight: 700;
 }
 
+/* md */
 @media (min-width: 670px) {
   .header {
     padding: 5rem 0;
@@ -79,6 +80,7 @@
   color: var(--color-text);
 }
 
+/* lg */
 @media (min-width: 940px) {
   .nav__item:hover::after {
     width: calc(100% - 4rem);

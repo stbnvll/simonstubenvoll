@@ -27,6 +27,7 @@
   display: none;
 }
 
+/* md */
 @media (min-width: 670px) {
   .hero__content {
     font-size: 3.6rem;
