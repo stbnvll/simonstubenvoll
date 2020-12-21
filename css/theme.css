@@ -14,6 +14,7 @@ https://github.com/necolas/idiomatic-css#general-principles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   --container-max-width: 1200px;
+  --container-narrow-max-width: 1000px;
 
   --color-text: #333;
   --color-primary: #eb5757;
@@ -27,10 +28,18 @@ https://github.com/necolas/idiomatic-css#general-principles
 
 /* Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
+.container,
+.container--narrow {
   width: 90%;
   max-width: var(--container-max-width);
   margin: 0 auto;
+}
+
+/* lg */
+@media (min-width: 940px) {
+  .container--narrow {
+    max-width: var(--container-narrow-max-width);
+  }
 }
 
 /* Base Styles
@@ -67,6 +76,7 @@ h2 {
   line-height: 4.1rem;
 }
 
+/* md */
 @media (min-width: 670px) {
   h1 {
     color: var(--color-text);
