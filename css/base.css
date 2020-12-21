@@ -7,9 +7,11 @@
 }
 .header__inner {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 6rem;
 }
 .header__brand {
   display: flex;
@@ -20,19 +22,21 @@
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  margin-right: 0.8rem;
+  margin: 0 0.8rem 0 0;
 }
 .header__brand__text {
   color: var(--color-text);
   font-weight: 700;
 }
 
+/* md */
 @media (min-width: 670px) {
   .header {
+    height: auto;
     padding: 5rem 0;
   }
   .header__inner {
-    justify-content: space-between;
+    flex-direction: row;
   }
   .header__brand__avatar {
     width: 4.8rem;
@@ -75,6 +79,7 @@
   color: var(--color-text);
 }
 
+/* lg */
 @media (min-width: 940px) {
   .nav__item:hover::after {
     width: calc(100% - 4rem);
