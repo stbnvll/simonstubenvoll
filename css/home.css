@@ -1,6 +1,7 @@
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
+  margin: 0 0 16rem 0;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
