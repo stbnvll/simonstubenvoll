@@ -7,11 +7,33 @@
 
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/theme.css' | url }}">
   </head>
 
   <body>
+    <header class="header" role="banner">
+      <div class="header__inner container">
+        <a class="header__brand" href="{{ '/' | url }}" rel="home">
+          <img class="header__brand__avatar" src="{{ '/img/portrait.png' | url }}">
+          <span class="header__brand__text">{{ metadata.title }}</span>
+        </a>
+
+        <div class="header__nav">
+          <nav class="nav" role="navigation">
+            <ul class="nav__menu">
+              {%- for entry in collections.all | eleventyNavigation %}
+                <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}">
+                  <a class="nav__link" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                </li>
+              {%- endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <main class="main container" role="main">
       {{ content | safe }}
     </main>
