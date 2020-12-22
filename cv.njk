@@ -7,3 +7,13 @@ eleventyNavigation:
 ---
 
 <h1>CV</h1>
+
+{% set joblist = collections.jobs %}
+<div class="joblist">
+  {% for job in joblist %}
+    <div class="joblist__item">
+      <h2 class="joblist__title">{{ job.data.title }}</h2>
+      <p class="joblist__description">{{ job.data.description }}</p>
+    </div>
+  {% endfor %}
+</div>

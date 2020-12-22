@@ -1,0 +1,63 @@
+/* Job
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.joblist {
+  position: relative;
+  margin: 0 0 0 3rem;
+}
+.joblist__item {
+  position: relative;
+  padding: 3rem 3rem 3rem 0;
+}
+.joblist__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2.45rem;
+  width: 0.1rem;
+  height: 100%;
+  background-color: var(--color-text);
+}
+.joblist__item:first-child::before {
+  top: 50%;
+}
+.joblist__item:last-child::before {
+  height: 50%;
+}
+.joblist__item::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: -3rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid var(--color-text);
+  border-radius: 50%;
+  background-color: #fff;
+}
+.joblist__item:first-child::after {
+  background-color: var(--color-text);
+}
+.joblist__title {
+  color: var(--color-primary);
+}
+.joblist__description {
+  margin: 0;
+}
+
+/* md */
+@media (min-width: 670px) {
+  .joblist {
+    margin: 0 0 0 10rem;
+  }
+  .joblist__item::before {
+    left: -4.9rem;
+    width: 0.2rem;
+  }
+  .joblist__item::after {
+    top: calc(50% - 1rem);
+    left: -6rem;
+    width: 2rem;
+    height: 2rem;
+    border-width: 0.2rem;
+  }
+}
