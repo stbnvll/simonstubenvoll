@@ -53,12 +53,12 @@
     margin: 0 0 0 10rem;
   }
   .joblist__item::before {
-    left: -4.9rem;
+    left: -6.9rem;
     width: 0.2rem;
   }
   .joblist__item::after {
     top: calc(50% - 1rem);
-    left: -6rem;
+    left: -8rem;
     width: 2rem;
     height: 2rem;
     border-width: 0.2rem;
