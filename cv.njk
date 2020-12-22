@@ -12,7 +12,9 @@ eleventyNavigation:
 <div class="joblist">
   {% for job in joblist %}
     <div class="joblist__item">
-      <h2 class="joblist__title">{{ job.data.title }}</h2>
+      <h2 class="joblist__title">
+        <a class="joblist__link" href="{{ job.url | url }}">{{ job.data.title }}</a>
+      </h2>
       <p class="joblist__description">{{ job.data.description }}</p>
     </div>
   {% endfor %}
