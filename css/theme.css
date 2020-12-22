@@ -94,7 +94,7 @@ a {
   color: var(--color-primary);
 }
 a:hover {
-  color: var(--color-secondary);
+  filter: saturate(1.5);
 }
 
 /* Media Queries
