@@ -60,27 +60,29 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1,
 h2 {
-  margin-top: 0;
-  margin-bottom: 4rem;
   font-family: var(--font-family-serif);
   font-weight: 400;
 }
 h1 {
+  margin: 0 0 2rem 0;
   font-size: 7.2rem;
   line-height: 8.2rem;
 }
 h2 {
-  font-size: 3.6rem;
-  line-height: 4.1rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 2.4rem;
+  line-height: 2.7rem;
 }
 
 /* md */
 @media (min-width: 670px) {
   h1 {
+    margin: 0 0 4rem 10rem;
     font-size: 9.6rem;
     line-height: 11rem;
   }
   h2 {
+    margin: 0 0 1rem 0;
     font-size: 3.6rem;
     line-height: 4.1rem;
   }
