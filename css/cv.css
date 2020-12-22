@@ -40,6 +40,9 @@
 .joblist__title {
   color: var(--color-primary);
 }
+.joblist__link {
+  text-decoration: none;
+}
 .joblist__description {
   margin: 0;
 }
