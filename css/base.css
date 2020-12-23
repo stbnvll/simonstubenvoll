@@ -1,5 +1,3 @@
-/* Header
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header {
   padding: 1.6rem 0;
   margin: 0 0 8rem 0;
@@ -44,7 +42,6 @@
   }
 }
 
-/* Navigation */
 .nav {
   display: flex;
 }
