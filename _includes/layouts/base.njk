@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ '/css/cv.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/home.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/post.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/theme.css' | url }}">
   </head>
 
@@ -25,11 +26,11 @@
         <div class="header__nav">
           <nav class="nav" role="navigation">
             <ul class="nav__menu">
-              {%- for entry in collections.all | eleventyNavigation %}
+              {% for entry in collections.all | eleventyNavigation %}
                 <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}">
                   <a class="nav__link" href="{{ entry.url | url }}">{{ entry.title }}</a>
                 </li>
-              {%- endfor %}
+              {% endfor %}
             </ul>
           </nav>
         </div>

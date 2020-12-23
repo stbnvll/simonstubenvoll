@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<h1>{{ title }}</h1>
+
+<div class="post__content">
+  <span class="post__description">{{ description }}</span>
+  {{ content | safe }}
+</div>
