@@ -1,5 +1,5 @@
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const globs = { jobs: "jobs/**/*.md", posts: "posts/**/*.md" };
+const globs = { jobs: "jobs/**/*.md", works: "works/**/*.md" };
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob(globs.jobs);
   });
 
-  eleventyConfig.addCollection("posts", function (collection) {
-    return collection.getFilteredByGlob(globs.posts);
+  eleventyConfig.addCollection("works", function (collection) {
+    return collection.getFilteredByGlob(globs.works);
   });
 };
