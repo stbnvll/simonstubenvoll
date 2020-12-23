@@ -1,6 +1,7 @@
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
+  padding: 2rem 0 0 0;
   margin: 0 0 16rem 0;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -11,6 +12,7 @@
   color: var(--color-primary);
   font-weight: 700;
   line-height: 2.1rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
 .hero__title--crossed {
@@ -19,6 +21,9 @@
   font-size: 2.4rem;
   line-height: 2.7rem;
   text-decoration: line-through;
+}
+.hero__title {
+  margin-left: 0;
 }
 .hero__content {
   font-size: 2.4rem;
