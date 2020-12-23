@@ -1,5 +1,3 @@
-/* Hero
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
   margin: 0 0 16rem 0;
   transform: translate3d(0, 0, 0);
@@ -9,10 +7,8 @@
 }
 .hero__pretitle {
   color: var(--color-primary);
-  font-weight: 700;
+  font-size: 1.8rem;
   line-height: 2.1rem;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
 }
 .hero__title--crossed {
   color: var(--color-secondary);
