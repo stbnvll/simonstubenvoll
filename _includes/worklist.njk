@@ -1,0 +1,14 @@
+<div class="worklist">
+  {% for work in worklist | reverse %}
+    <div class="worklist__item">
+      <img class="worklist__thumb" src="{{ '/img/thumbs/' + work.data.thumb | url }}">
+      <div class="worklist__text">
+        <h2 class="worklist__title">
+          <a class="worklist__link" href="{{ work.url | url }}">{{ work.data.title }}</a>
+        </h2>
+        <strong class="worklist__tag">{{ work.data.meta }}</strong>
+        <p class="worklist__description">{{ work.data.description }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>

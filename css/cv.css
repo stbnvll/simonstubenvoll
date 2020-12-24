@@ -1,12 +1,9 @@
-/* Job
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .joblist {
-  position: relative;
   margin: 0 0 0 3rem;
 }
 .joblist__item {
   position: relative;
-  padding: 3rem 3rem 3rem 0;
+  padding: 3rem 0;
 }
 .joblist__item::before {
   content: "";
@@ -19,6 +16,7 @@
 }
 .joblist__item:first-child::before {
   top: 50%;
+  height: 50%;
 }
 .joblist__item:last-child::before {
   height: 50%;
@@ -36,12 +34,6 @@
 }
 .joblist__item:first-child::after {
   background-color: var(--color-text);
-}
-.joblist__title {
-  color: var(--color-primary);
-}
-.joblist__link {
-  text-decoration: none;
 }
 .joblist__description {
   margin: 0;

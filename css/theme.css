@@ -1,17 +1,27 @@
 /* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-https://github.com/necolas/idiomatic-css#general-principles
+   ========================================================================== */
 
-- Variables
-- Layout
-- Base Styles
-- Typography
-- Links
-- Media Queries
-*/
+/**
+ * - Principles
+ * - Variables
+ * - Layout
+ * - Base Styles
+ * - Typography
+ * - Links
+ * - Images
+ * - Media Queries
+ */
+
+/* Principles
+   ========================================================================== */
+
+/**
+ * https://github.com/necolas/idiomatic-css#general-principles
+ */
 
 /* Variables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+   ========================================================================== */
+
 :root {
   --container-max-width: 1200px;
   --container-narrow-max-width: 1000px;
@@ -27,7 +37,8 @@ https://github.com/necolas/idiomatic-css#general-principles
 }
 
 /* Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+   ========================================================================== */
+
 .container,
 .container--narrow {
   width: 90%;
@@ -43,21 +54,30 @@ https://github.com/necolas/idiomatic-css#general-principles
 }
 
 /* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* html is set to 62.5% so that all the REM measurements are based on 10px sizing (1.5rem = 15px) */
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * "html" is set to 62.5% so that all the REM measurements are based on 10px sizing (1.5rem = 15px)
+ */
+
 html {
   font-size: 62.5%;
 }
 body {
   color: var(--color-text);
   font-family: var(--font-family-sans-serif);
-  font-size: 1.8em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.8em; /* Currently ems cause chrome bug misinterpreting rems on body element */
   font-weight: 400;
   line-height: 2.5rem;
 }
 
 /* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+   ========================================================================== */
+
 h1,
 h2 {
   font-family: var(--font-family-serif);
@@ -73,9 +93,30 @@ h2 {
   font-size: 2.4rem;
   line-height: 2.7rem;
 }
+strong {
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
 
 /* md */
 @media (min-width: 670px) {
+  h1 {
+    margin: 0 0 4rem 10rem;
+    font-size: 7.2rem;
+    line-height: 8.2rem;
+  }
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 3.6rem;
+    line-height: 4.1rem;
+  }
+}
+
+/* lg */
+@media (min-width: 940px) {
   h1 {
     margin: 0 0 4rem 10rem;
     font-size: 9.6rem;
@@ -89,16 +130,38 @@ h2 {
 }
 
 /* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+   ========================================================================== */
+
 a {
   color: var(--color-primary);
 }
 a:hover {
   filter: saturate(1.5);
 }
+h2 > a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Images
+   ========================================================================== */
+
+figure {
+  margin: 0 -1.5rem;
+}
+img {
+  max-width: 100%;
+}
+figcaption {
+  margin: 0 1.5rem;
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
 
 /* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+   ========================================================================== */
+
 /* md */
 @media (min-width: 670px) {
 }

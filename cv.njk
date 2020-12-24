@@ -10,12 +10,12 @@ eleventyNavigation:
 
 {% set joblist = collections.jobs %}
 <div class="joblist">
-  {% for job in joblist %}
+  {% for job in joblist | reverse %}
     <div class="joblist__item">
       <h2 class="joblist__title">
         <a class="joblist__link" href="{{ job.url | url }}">{{ job.data.title }}</a>
       </h2>
-      <p class="joblist__description">{{ job.data.description }}</p>
+      <p class="joblist__description">{{ job.data.meta }}</p>
     </div>
   {% endfor %}
 </div>
