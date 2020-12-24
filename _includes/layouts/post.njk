@@ -6,8 +6,10 @@ templateClass: tmpl-post
 
 <div class="post__content">
   <strong class="post__tag">{{ meta }}</strong>
+
   {% if description %}
     <p class="post__lead">{{ description }}</p>
   {% endif %}
+
   {{ content | safe }}
 </div>
