@@ -12,7 +12,7 @@ However, I must confess that we have not completely reinvented the wheel. Such a
 So Knauf commissioned <a href="https://irs-nbg.de" target="_blank" rel="noopener noreferrer">IRS GmbH</a>, my former employer, with the Knauf Infothek 2.0. A real, native app for Android and iOS was to be created, with the initial focus again on tablet formats. However, the next step to the smartphone should be kept in mind both in terms of visualization and technical implementation. Of course, the content should also be available online and offline again.
 
 <figure>
-  <img src="{{ '/img/details/knauf-infothek.png' | url }}">
+  <img src="{{ '/img/details/knauf-infothek.jpg' | url }}">
   <figcaption class="post__caption">Screenshot of Knauf Infothek</figcaption>
 </figure>
 
