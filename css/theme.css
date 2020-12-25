@@ -136,11 +136,14 @@ a {
   color: var(--color-primary);
 }
 a:hover {
-  filter: saturate(1.5);
+  text-decoration: none;
 }
 h2 > a {
   color: var(--color-primary);
   text-decoration: none;
+}
+h2 > a:hover {
+  filter: saturate(1.5);
 }
 
 /* Images
