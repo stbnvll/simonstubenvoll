@@ -2,7 +2,7 @@
 title: Knauf Infothek
 meta: 2018 | Design, Code
 description: Technical documentation in a native app for Android and iOS.
-thumb: knauf-infothek.jpg
+thumb: knauf-infothek-thumb.jpg
 layout: layouts/post.njk
 ---
 <a href="https://www.knauf.de/" target="_blank" rel="noopener noreferrer">Knauf Gips KG</a> is a manufacturer and distributor of systems for drywall, flooring, plaster and facade. This abundance of products naturally requires a lot of technical documentation, which somehow has to be brought to the customer. This is where the Knauf Infothek comes in, an application for Android and iOS tablets.
@@ -12,7 +12,7 @@ However, I must confess that we have not completely reinvented the wheel. Such a
 So Knauf commissioned <a href="https://irs-nbg.de/" target="_blank" rel="noopener noreferrer">IRS GmbH</a>, my former employer, with the Knauf Infothek 2.0. A real, native app for Android and iOS was to be created, with the initial focus again on tablet formats. However, the next step to the smartphone should be kept in mind both in terms of visualization and technical implementation. Of course, the content should also be available online and offline again.
 
 <figure>
-  <img src="{{ '/img/details/knauf-infothek.jpg' | url }}">
+  <img src="{{ '/img/portfolio/knauf-infothek-detail.jpg' | url }}">
   <figcaption class="post__caption">Screenshot of Knauf Infothek</figcaption>
 </figure>
 

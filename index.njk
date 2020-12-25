@@ -4,7 +4,6 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-
 <div class="hero">
   <strong class="hero__pretitle">Hi, my name is Simon</strong>
   <p class="hero__title--crossed">I do programming.</p>
@@ -20,6 +19,6 @@ eleventyNavigation:
 
 <div>
   <h2>Latest Work</h2>
-  {% set worklist = collections.works | head(-1) %}
-  {% include "worklist.njk" %}
+  {% set portfoliolist = collections.portfolio | head(-1) %}
+  {% include "portfoliolist.njk" %}
 </div>

@@ -1,5 +1,5 @@
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const globs = { jobs: "jobs/**/*.md", works: "works/**/*.md" };
+const globs = { jobs: "jobs/**/*.md", portfolio: "portfolio/**/*.md" };
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
@@ -10,8 +10,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("jobs", function (collection) {
     return collection.getFilteredByGlob(globs.jobs);
   });
-  eleventyConfig.addCollection("works", function (collection) {
-    return collection.getFilteredByGlob(globs.works);
+  eleventyConfig.addCollection("portfolio", function (collection) {
+    return collection.getFilteredByGlob(globs.portfolio);
   });
 
   // Get the first 'n' elements of a collection.
