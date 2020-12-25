@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="{{ '/css/cv.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/home.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/portfoliolist.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/post.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/theme.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/worklist.css' | url }}">
   </head>
 
   <body>
     <header class="header" role="banner">
       <div class="header__inner container">
         <a class="header__brand" href="{{ '/' | url }}" rel="home">
-          <img class="header__brand__avatar" src="{{ '/img/simonstubenvoll.jpg' | url }}">
-          <span class="header__brand__text">{{ metadata.title }}</span>
+          <img class="header__avatar" src="{{ '/img/simonstubenvoll.jpg' | url }}">
+          <span class="header__title">{{ metadata.title }}</span>
         </a>
 
         <div class="header__nav">
@@ -44,6 +44,16 @@
       {{ content | safe }}
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <span class="footer__item">© 2020, Simon Stubenvoll</span>
+        <span class="footer__item">
+          <a class="footer__link" href="https://twitter.com/therealstbnvll/" target="_blank" rel="noopener noreferrer">Twitter</a> /
+          <a class="footer__link" href="https://xing.to/simonstubenvoll/" target="_blank" rel="noopener noreferrer">Xing</a> /
+          <a class="footer__link" href="#">Data Privacy</a> /
+          <a class="footer__link" href="#">Imprint</a>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>

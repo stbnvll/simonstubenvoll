@@ -1,28 +1,28 @@
-.worklist__item {
+.portfoliolist__item {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 4rem 0;
 }
-.worklist__thumb {
+.portfoliolist__thumb {
   width: 100%;
   height: 100%;
 }
-.worklist__text {
+.portfoliolist__text {
   padding: 1rem 0 0 0;
 }
-.worklist__title {
+.portfoliolist__title {
   margin: 0 0 0.5rem 0;
 }
-.worklist__description {
+.portfoliolist__description {
   margin: 1rem 0 0 0;
 }
 
 /* md */
 @media (min-width: 670px) {
-  .worklist__item {
+  .portfoliolist__item {
     flex-wrap: nowrap;
   }
-  .worklist__thumb {
+  .portfoliolist__thumb {
     width: 30rem;
     height: 20rem;
     margin: 0 3rem 0 0;
@@ -31,10 +31,10 @@
 
 /* lg */
 @media (min-width: 940px) {
-  .worklist__thumb {
+  .portfoliolist__thumb {
     margin: 0 6rem 0 0;
   }
-  .worklist__text {
+  .portfoliolist__text {
     padding: 2rem 0 0 0;
   }
 }
