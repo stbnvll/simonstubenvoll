@@ -7,14 +7,14 @@ eleventyNavigation:
 ---
 <h1>CV</h1>
 
-{% set joblist = collections.jobs %}
-<div class="joblist">
-  {% for job in joblist | reverse %}
-    <div class="joblist__item">
-      <h2 class="joblist__title">
-        <a class="joblist__link" href="{{ job.url | url }}">{{ job.data.title }}</a>
+{% set cvlist = collections.cv %}
+<div class="cvlist">
+  {% for entry in cvlist | reverse %}
+    <div class="cvlist__item">
+      <h2 class="cvlist__title">
+        <a class="cvlist__link" href="{{ entry.url | url }}">{{ entry.data.title }}</a>
       </h2>
-      <p class="joblist__description">{{ job.data.meta }}</p>
+      <p class="cvlist__description">{{ entry.data.meta }}</p>
     </div>
   {% endfor %}
 </div>
