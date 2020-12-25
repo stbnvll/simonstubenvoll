@@ -1,15 +1,10 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
 
 <div class="post__content">
-  <strong class="post__tag">{{ meta }}</strong>
-
-  {% if description %}
-    <p class="post__lead">{{ description }}</p>
-  {% endif %}
-
+  {% if meta %}<strong class="post__tag">{{ meta }}</strong>{% endif %}
+  {% if description %}<p class="post__lead">{{ description }}</p>{% endif %}
   {{ content | safe }}
 </div>
