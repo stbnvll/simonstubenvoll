@@ -5,6 +5,7 @@ description: Uniform appearance for different product divisions.
 thumb: websites-of-irs-gmbh-thumb.jpg
 layout: layouts/post.njk
 ---
+
 <a href="https://irs-nbg.de/" target="_blank" rel="noopener noreferrer">Integrated Realization Services GmbH</a> in Nuremberg offers its customers a wide range of services. These include <a href="http://web-to-media.de/" target="_blank" rel="noopener noreferrer">marketing management portals</a>, <a href="https://genow.de/" target="_blank" rel="noopener noreferrer">programmatic printing</a>, <a href="https://gecona.de/" target="_blank" rel="noopener noreferrer">mobile publications</a> and agency services. Unfortunately, for a long time, the websites of the individual divisions did not suggest that they all came from a single source. Together with the management, I started the relaunch of these.
 
 <figure>

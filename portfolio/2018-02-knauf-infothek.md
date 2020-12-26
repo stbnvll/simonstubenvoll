@@ -5,6 +5,7 @@ description: Technical documentation in a native app for Android and iOS.
 thumb: knauf-infothek-thumb.jpg
 layout: layouts/post.njk
 ---
+
 <a href="https://www.knauf.de/" target="_blank" rel="noopener noreferrer">Knauf Gips KG</a> is a manufacturer and distributor of systems for drywall, flooring, plaster and facade. This abundance of products naturally requires a lot of technical documentation, which somehow has to be brought to the customer. This is where the Knauf Infothek comes in, an application for Android and iOS tablets.
 
 However, I must confess that we have not completely reinvented the wheel. Such an app already existed. But it was implemented with AngularJS, packed into a container and with little native user experience. In 2018 this was no longer enough to compete in the App Store.
