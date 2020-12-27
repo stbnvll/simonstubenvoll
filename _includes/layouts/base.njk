@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 
-    <title>{{ title or metadata.title }}</title>
-    <meta name="description" content="{{ description or metadata.description }}">
+    {% include "meta.njk" %}
 
     <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/cv.css' | url }}">
@@ -22,7 +21,7 @@
     <header class="header" role="banner">
       <div class="header__inner container">
         <a class="header__brand" href="{{ '/' | url }}" rel="home">
-          <img class="header__avatar" src="{{ '/img/simonstubenvoll.jpg' | url }}">
+          <img class="header__avatar" src="{{ '/img/avatar.jpg' | url }}">
           <span class="header__title">{{ metadata.title }}</span>
         </a>
 
