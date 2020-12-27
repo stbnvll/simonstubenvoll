@@ -1,6 +1,7 @@
 {
+  "domain": "simonstubenvoll.de",
+  "url": "https://simonstubenvoll.de/",
   "title": "Simon Stubenvoll",
   "description": "My personal website built with 11ty.",
-  "url": "https://simonstubenvoll.de/",
-  "domain": "simonstubenvoll.de"
+  "image": "https://www.simonstubenvoll.de/img/avatar.jpg"
 }
