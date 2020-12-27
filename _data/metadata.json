@@ -1,5 +1,6 @@
 {
   "title": "Simon Stubenvoll",
+  "description": "My personal website built with 11ty.",
   "url": "https://simonstubenvoll.de/",
-  "description": "My personal website built with 11ty."
+  "domain": "simonstubenvoll.de"
 }
