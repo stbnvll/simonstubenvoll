@@ -30,7 +30,7 @@
   height: 1rem;
   border: 0.1rem solid var(--color-text);
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 .cvlist__item:first-child::after {
   background-color: var(--color-text);

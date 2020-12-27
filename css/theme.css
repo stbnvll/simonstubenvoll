@@ -26,14 +26,22 @@
   --container-max-width: 1200px;
   --container-narrow-max-width: 1000px;
 
+  --font-family-sans-serif: "Raleway", "HelveticaNeue", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  --font-family-serif: Georgia, "Times New Roman", Times, serif;
+
+  --color-bg: #fff;
   --color-text: #333;
   --color-primary: #eb5757;
   --color-secondary: #bdbdbd;
   --color-border: #e0e0e0;
+}
 
-  --font-family-sans-serif: "Raleway", "HelveticaNeue", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
-  --font-family-serif: Georgia, "Times New Roman", Times, serif;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #333;
+    --color-text: #fff;
+  }
 }
 
 /* Layout
@@ -67,6 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-family-sans-serif);
   font-size: 1.8em; /* Currently ems cause chrome bug misinterpreting rems on body element */
