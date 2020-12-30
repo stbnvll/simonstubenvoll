@@ -12,7 +12,7 @@ The tool was released as a web application at the end of 2020, is called <a href
 
 <figure>
   <img src="{{ '/img/portfolio/datev-personal-benchmark-online-detail.jpg' | url }}">
-  <figcaption class="post__caption">Match your employee with a comparison group</figcaption>
+  <figcaption class="post__caption">Employee versus comparison group</figcaption>
 </figure>
 
 The technology stack of the UI is relatively narrow, it is based on <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">Angular</a> and uses <a href="https://d3js.org" target="_blank" rel="noopener noreferrer">D3</a> to draw the graphics. The tasks were also to establish a web application in an on-prem-dominated environment and to develop a suitable user experience - they still are.
