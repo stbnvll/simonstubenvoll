@@ -14,14 +14,14 @@ So Knauf commissioned <a href="https://irs-nbg.de/" target="_blank" rel="noopene
 
 <figure>
   <img src="{{ '/img/portfolio/knauf-infothek-detail-01.jpg' | url }}">
-  <figcaption class="post__caption">Knauf Infothek's starting page</figcaption>
+  <figcaption class="post__caption">A truly native starting page, right?</figcaption>
 </figure>
 
 Our four-member team developed a functional UX concept for navigating through Knauf's product range and managing the associated content. The final visualization of the UI was largely in my hands. Native elements determined the design, efficiency and visual integration into the respective operating system were the main focus. We collected feedback in regular customer reviews.
 
 <figure>
   <img src="{{ '/img/portfolio/knauf-infothek-detail-02.jpg' | url }}">
-  <figcaption class="post__caption">Create your own collections</figcaption>
+  <figcaption class="post__caption">Own collections as a new feature</figcaption>
 </figure>
 
 The technical implementation was done with React Native, for the management of the state information we used Redux. The possibility to work in our familiar environment and to provide two systems with one code base made this choice easy for us as web developers. So we brought the Knauf Infothek back to its well-deserved place in <a href="https://apps.apple.com/de/app/knauf-infothek/id949469695/" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=de.knauf.infothek/" target="_blank" rel="noopener noreferrer">Google Play Store</a>.
