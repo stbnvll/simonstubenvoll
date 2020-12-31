@@ -8,10 +8,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
 
   eleventyConfig.addCollection("cv", function (collection) {
-    return collection.getFilteredByGlob(globs.cv);
+    return collection
+      .getFilteredByGlob(globs.cv)
+      .sort((a, b) => b.date - a.date);
   });
   eleventyConfig.addCollection("portfolio", function (collection) {
-    return collection.getFilteredByGlob(globs.portfolio);
+    return collection
+      .getFilteredByGlob(globs.portfolio)
+      .sort((a, b) => b.date - a.date);
   });
 
   // Get the first 'n' elements of a collection.
