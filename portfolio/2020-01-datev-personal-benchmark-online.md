@@ -15,4 +15,4 @@ The tool was released as a web application at the end of 2020, is called <a href
   <figcaption class="post__caption">Employee versus comparison group</figcaption>
 </figure>
 
-The technology stack of the UI is relatively narrow, it is based on <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">Angular</a> and uses <a href="https://d3js.org" target="_blank" rel="noopener noreferrer">D3</a> to draw the graphics. The tasks were also to establish a web application in an on-prem-dominated environment and to develop a suitable user experience - they still are.
+The technology stack of the frontend is relatively narrow, consisting primarily of <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">Angular</a> and <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">D3</a>. The latter is used to draw the graphics. Away from the UI, challenges for the team were (and still are) mainly to meet data protection requirements as well as to establish a web-based application in a still on-prem-dominated environment.
