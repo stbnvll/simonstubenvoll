@@ -45,14 +45,14 @@
     margin: 0 0 0 10rem;
   }
   .cvlist__item::before {
-    left: -6.9rem;
+    left: -6.65rem;
     width: 0.2rem;
   }
   .cvlist__item::after {
     top: calc(50% - 1rem);
-    left: -8rem;
-    width: 2rem;
-    height: 2rem;
+    left: -7.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-width: 0.2rem;
   }
 }
