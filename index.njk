@@ -20,6 +20,6 @@ eleventyNavigation:
 
 <div>
   <h2>Latest Work</h2>
-  {% set portfoliolist = collections.portfolio | head(-1) %}
+  {% set portfoliolist = collections.portfolio | first %}
   {% include "portfoliolist.njk" %}
 </div>
