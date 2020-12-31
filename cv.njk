@@ -9,12 +9,12 @@ eleventyNavigation:
 
 {% set cvlist = collections.cv %}
 <div class="cvlist">
-  {% for entry in cvlist | reverse %}
+  {% for entry in cvlist %}
     <div class="cvlist__item">
       <h2 class="cvlist__title">
         <a class="cvlist__link" href="{{ entry.url | url }}">{{ entry.data.title }}</a>
       </h2>
-      <p class="cvlist__description">{{ entry.data.meta }}</p>
+      <p class="cvlist__tag">{{ entry.data.date }} | {{ entry.data.tag }}</p>
     </div>
   {% endfor %}
 </div>

@@ -1,13 +1,13 @@
 <div class="portfoliolist">
-  {% for entry in portfoliolist | reverse %}
+  {% for entry in portfoliolist %}
     <div class="portfoliolist__item">
       <img class="portfoliolist__thumb" src="{{ '/img/portfolio/' + entry.data.thumb | url }}">
       <div class="portfoliolist__text">
         <h2 class="portfoliolist__title">
           <a class="portfoliolist__link" href="{{ entry.url | url }}">{{ entry.data.title }}</a>
         </h2>
-        <strong class="portfoliolist__tag">{{ entry.data.meta }}</strong>
-        <p class="portfoliolist__description">{{ entry.data.description }}</p>
+        <strong class="portfoliolist__tag">{{ entry.data.date }} | {{ entry.data.tag }}</strong>
+        <p class="portfoliolist__lead">{{ entry.data.lead }}</p>
       </div>
     </div>
   {% endfor %}
