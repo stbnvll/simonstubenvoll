@@ -18,9 +18,7 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
-  // Get the first 'n' elements of a collection.
-  eleventyConfig.addFilter("head", function (array, n) {
-    if (n < 0) return array.slice(n);
-    return array.slice(0, n);
+  eleventyConfig.addFilter("first", function (array) {
+    return array.slice(0, 1);
   });
 };
