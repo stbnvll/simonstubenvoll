@@ -45,7 +45,7 @@
     margin: 0 0 0 10rem;
   }
   .cvlist__item::before {
-    left: -6.75rem;
+    left: -6.65rem;
     width: 0.2rem;
   }
   .cvlist__item::after {
