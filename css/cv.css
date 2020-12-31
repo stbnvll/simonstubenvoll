@@ -3,7 +3,7 @@
 }
 .cvlist__item {
   position: relative;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .cvlist__item::before {
   content: "";
@@ -43,9 +43,6 @@
 @media (min-width: 670px) {
   .cvlist {
     margin: 0 0 0 10rem;
-  }
-  .cvlist__item {
-    padding: 3rem 0;
   }
   .cvlist__item::before {
     left: -6.65rem;
