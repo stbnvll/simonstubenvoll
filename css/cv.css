@@ -5,6 +5,12 @@
   position: relative;
   padding: 3rem 0;
 }
+.cvlist__item:first-child {
+  margin: -3rem 0 0 0;
+}
+.cvlist__item:last-child {
+  margin: 0 0 -3rem 0;
+}
 .cvlist__item::before {
   content: "";
   position: absolute;
