@@ -1,7 +1,8 @@
 ---
 title: Websites of IRS GmbH
-meta: 2018 | Design, Code
-description: Uniform appearance for different product divisions.
+lead: Uniform appearance for different product divisions.
+tag: Design, Code
+date: 2018-06
 thumb: websites-of-irs-gmbh-thumb.jpg
 layout: layouts/post.njk
 ---

@@ -1,7 +1,8 @@
 ---
 title: Knauf Infothek
-meta: 2018 | Design, Code
-description: Technical documentation in a native app for Android and iOS.
+lead: Technical documentation in a native app for Android and iOS.
+tag: Design, Code
+date: 2018-12
 thumb: knauf-infothek-thumb.jpg
 layout: layouts/post.njk
 ---

@@ -1,7 +1,8 @@
 ---
 title: DATEV Personal-Benchmark online
-meta: 2020 | Code
-description: An UI for customer-orientated visualization of Big Data.
+lead: An UI for customer-orientated visualization of Big Data.
+tag: Code
+date: 2020-10
 thumb: datev-personal-benchmark-online-thumb.jpg
 layout: layouts/post.njk
 ---
