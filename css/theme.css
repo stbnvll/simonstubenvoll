@@ -152,6 +152,9 @@ h2 > a {
 h2 > a:hover {
   filter: saturate(1.5);
 }
+figcaption > a {
+  color: var(--color-secondary);
+}
 
 /* Images
    ========================================================================== */
