@@ -13,7 +13,10 @@ The tool was released as a web application at the end of 2020, is called <a href
 
 <figure>
   <img src="{{ '/img/portfolio/datev-personal-benchmark-online-detail.jpg' | url }}">
-  <figcaption class="post__caption">Employee versus comparison group</figcaption>
+  <figcaption class="post__caption">
+    Employee versus comparison group
+    <a href="https://www.datev.de/web/de/datev-shop/personalwirtschaft/datev-personal-benchmark-online/" target="_blank" rel="noopener noreferrer">(DATEV-Shop)</a>
+  </figcaption>
 </figure>
 
 The technology stack of the frontend is relatively narrow, consisting primarily of <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">Angular</a> and <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">D3</a>. The latter is used to draw the graphics. Away from the UI, challenges for the team were (and still are) mainly to meet data protection requirements as well as to establish a web-based application in a still on-prem-dominated environment.
