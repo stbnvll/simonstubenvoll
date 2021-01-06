@@ -1,5 +1,5 @@
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const globs = { cv: "cv/**/*.md", portfolio: "portfolio/**/*.md" };
+const globs = { jobs: "jobs/**/*.md", portfolio: "portfolio/**/*.md" };
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
@@ -7,9 +7,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("img");
 
-  eleventyConfig.addCollection("cv", function (collection) {
+  eleventyConfig.addCollection("jobs", function (collection) {
     return collection
-      .getFilteredByGlob(globs.cv)
+      .getFilteredByGlob(globs.jobs)
       .sort((a, b) => b.date - a.date);
   });
   eleventyConfig.addCollection("portfolio", function (collection) {
