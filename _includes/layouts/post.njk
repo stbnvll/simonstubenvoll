@@ -5,7 +5,7 @@ layout: layouts/base.njk
 <h1>{{ title }}</h1>
 
 <div class="post__content">
-  <strong class="post__tag">{{ date }} | {{ tag }}</strong>
+  {% if tag %}<strong class="post__tag">{{ date }} | {{ tag }}</strong>{% endif %}
   {% if lead %}<p class="post__lead">{{ lead }}</p>{% endif %}
   {{ content | safe }}
 </div>
