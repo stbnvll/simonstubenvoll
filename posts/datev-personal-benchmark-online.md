@@ -12,7 +12,7 @@ layout: layouts/post.njk
 The tool was released as a web application at the end of 2020, is called <a href="https://www.datev.de/web/de/datev-shop/personalwirtschaft/datev-personal-benchmark-online/" target="_blank" rel="noopener noreferrer">DATEV Personal-Benchmark online</a> and I was allowed to accompany its creation since the beginning of 2019 as technical lead of the frontend. The heart of the MVP is a salary comparison. Depending on the profession of an employee to be selected, the salary of the same is compared there with a Germany-wide comparison group. The visualization is done by charts.
 
 <figure>
-  <img src="{{ '/img/posts/datev-personal-benchmark-online-detail.jpg' | url }}">
+  <img src="{{ '/img/posts/datev-personal-benchmark-online/evaluation.jpg' | url }}">
   <figcaption class="post__caption">
     Employee versus comparison group
     <a href="https://www.datev.de/web/de/datev-shop/personalwirtschaft/datev-personal-benchmark-online/" target="_blank" rel="noopener noreferrer">(DATEV-Shop)</a>

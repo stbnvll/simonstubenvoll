@@ -1,7 +1,7 @@
 <div class="postlist">
   {% for post in postlist %}
     <div class="postlist__item">
-      <img class="postlist__thumb" src="{{ '/img/posts/' + post.data.thumb | url }}">
+      <img class="postlist__thumb" src="{{ '/img/posts/' + post.fileSlug + '/thumb.jpg' | url }}">
       <div class="postlist__text">
         <h2 class="postlist__title">
           <a class="postlist__link" href="{{ post.url | url }}">{{ post.data.title }}</a>
