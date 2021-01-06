@@ -14,7 +14,7 @@ However, I must confess that we have not completely reinvented the wheel. Such a
 So Knauf commissioned <a href="https://irs-nbg.de/" target="_blank" rel="noopener noreferrer">IRS GmbH</a>, my former employer, with the Knauf Infothek 2.0. A real, native app for Android and iOS was to be created, with the initial focus again on tablet formats. However, the next step to the smartphone should be kept in mind both in terms of visualization and technical implementation. Of course, the content should also be available online and offline again.
 
 <figure>
-  <img src="{{ '/img/portfolio/knauf-infothek-detail-01.jpg' | url }}">
+  <img src="{{ '/img/posts/knauf-infothek-detail-01.jpg' | url }}">
   <figcaption class="post__caption">
     A truly native starting page, right?
     <a href="https://apps.apple.com/de/app/knauf-infothek/id949469695/" target="_blank" rel="noopener noreferrer">(App Store)</a>
@@ -24,7 +24,7 @@ So Knauf commissioned <a href="https://irs-nbg.de/" target="_blank" rel="noopene
 Our four-member team developed a functional UX concept for navigating through Knauf's product range and managing the associated content. The final visualization of the UI was largely in my hands. Native elements determined the design, efficiency and visual integration into the respective operating system were the main focus. We collected feedback in regular customer reviews.
 
 <figure>
-  <img src="{{ '/img/portfolio/knauf-infothek-detail-02.jpg' | url }}">
+  <img src="{{ '/img/posts/knauf-infothek-detail-02.jpg' | url }}">
   <figcaption class="post__caption">
     Own collections as a new feature
     <a href="https://apps.apple.com/de/app/knauf-infothek/id949469695/" target="_blank" rel="noopener noreferrer">(App Store)</a>

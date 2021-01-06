@@ -1,28 +1,28 @@
-.portfoliolist__item {
+.postlist__item {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 4rem 0;
 }
-.portfoliolist__thumb {
+.postlist__thumb {
   width: 100%;
   height: 100%;
 }
-.portfoliolist__text {
+.postlist__text {
   padding: 1rem 0 0 0;
 }
-.portfoliolist__title {
+.postlist__title {
   margin: 0 0 0.5rem 0;
 }
-.portfoliolist__lead {
+.postlist__lead {
   margin: 1rem 0 0 0;
 }
 
 /* md */
 @media (min-width: 670px) {
-  .portfoliolist__item {
+  .postlist__item {
     flex-wrap: nowrap;
   }
-  .portfoliolist__thumb {
+  .postlist__thumb {
     width: 30rem;
     height: 20rem;
     margin: 0 3rem 0 0;
@@ -31,10 +31,10 @@
 
 /* lg */
 @media (min-width: 940px) {
-  .portfoliolist__thumb {
+  .postlist__thumb {
     margin: 0 6rem 0 0;
   }
-  .portfoliolist__text {
+  .postlist__text {
     padding: 2rem 0 0 0;
   }
 }

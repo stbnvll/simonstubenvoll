@@ -12,7 +12,7 @@ I've relaunched my website one or two times now, but somehow I was never really 
 With this sweetie here it should be different, I have already limited myself to the essentials in the design. The thing should go live as soon as possible in its first version and also look good. I do have a lot of ideas for further extensions, visible or under the hood. So stay tuned.
 
 <figure>
-  <img src="{{ '/img/portfolio/my-personal-website-detail.jpg' | url }}">
+  <img src="{{ '/img/posts/my-personal-website-detail.jpg' | url }}">
   <figcaption class="post__caption">Light on, light off</figcaption>
 </figure>
 
