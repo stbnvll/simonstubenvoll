@@ -16,6 +16,7 @@
   position: absolute;
   z-index: 1;
   left: 5%;
+  display: none;
   width: 90%;
   padding: 2.4rem;
   border-radius: 2.4rem;
@@ -23,12 +24,9 @@
   background-color: var(--color-text);
   color: var(--color-bg);
   list-style: none;
-  transform: translate(-2.4rem, 2.4rem) scale(0,0);
-  transform-origin: 100% 0%;
-  transition: transform 0.2s ease-in;
 }
 .nav--open .nav__menu {
-  transform: translate(0, 0) scale(1, 1);
+  display: block;
 }
 .nav__item {
   margin: 0 0 2.4rem 0;
