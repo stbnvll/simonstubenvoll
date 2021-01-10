@@ -1,5 +1,14 @@
-<nav class="nav" role="navigation">
-  <ul class="nav__menu">
+<nav class="nav js-nav" role="navigation">
+
+  <button class="iconbtn nav__togglebtn js-nav-toggle" aria-expanded="false" aria-controls"nav-menu" aria-label="toggle menu">
+    <span class="menuicon">
+      <span class="menuicon__bar"></span>
+      <span class="menuicon__bar"></span>
+      <span class="menuicon__bar"></span>
+    </span>
+  </button>
+
+  <ul class="nav__menu js-nav-menu" id="nav-menu">
     {% for entry in collections.all | eleventyNavigation %}
       <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}">
         <a class="nav__link" href="{{ entry.url | url }}">{{ entry.title }}</a>
