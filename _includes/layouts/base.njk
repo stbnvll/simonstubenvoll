@@ -9,6 +9,7 @@
     {% include "meta.njk" %}
 
     <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/home.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/jobs.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
@@ -18,26 +19,7 @@
   </head>
 
   <body>
-    <header class="header" role="banner">
-      <div class="header__inner container">
-        <a class="header__brand" href="{{ '/' | url }}" rel="home">
-          <img class="header__avatar" src="{{ '/img/avatar.jpg' | url }}">
-          <span class="header__title">{{ metadata.title }}</span>
-        </a>
-
-        <div class="header__nav">
-          <nav class="nav" role="navigation">
-            <ul class="nav__menu">
-              {% for entry in collections.all | eleventyNavigation %}
-                <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}">
-                  <a class="nav__link" href="{{ entry.url | url }}">{{ entry.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    {% include "header.njk" %}
 
     <main class="main container--narrow" role="main">
       {{ content | safe }}
