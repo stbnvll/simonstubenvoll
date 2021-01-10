@@ -11,7 +11,6 @@ const CLASSES = {
 class Navigation {
   constructor() {
     this.isOpen = false;
-
     this.nav = document.querySelector(SELECTORS.nav);
     this.toggleBtn = this.nav.querySelector(SELECTORS.toggleBtn);
 
@@ -21,11 +20,10 @@ class Navigation {
   bindEvents() {
     this.toggleBtn.addEventListener("click", () => this.toggleMenu());
     document.addEventListener("click", (event) => {
-      const isClickInside = event.target.closest(
-        SELECTORS.toggleBtn,
-        SELECTORS.menu
-      );
-      if (this.isOpen && !isClickInside) this.toggleMenu();
+      const isToggleBtn = event.target.closest(SELECTORS.toggleBtn);
+      const isMenu = event.target.closest(SELECTORS.menu);
+
+      if (this.isOpen && !isToggleBtn && !isMenu) this.toggleMenu();
     });
   }
 
