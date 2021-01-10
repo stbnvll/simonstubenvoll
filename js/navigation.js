@@ -21,7 +21,10 @@ class Navigation {
   bindEvents() {
     this.toggleBtn.addEventListener("click", () => this.toggleMenu());
     document.addEventListener("click", (event) => {
-      const isClickInside = event.target.closest(SELECTORS.toggleBtn, SELECTORS.menu);
+      const isClickInside = event.target.closest(
+        SELECTORS.toggleBtn,
+        SELECTORS.menu
+      );
       if (this.isOpen && !isClickInside) this.toggleMenu();
     });
   }
