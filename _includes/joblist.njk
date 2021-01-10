@@ -1,0 +1,10 @@
+<div class="joblist">
+  {% for job in joblist %}
+    <div class="joblist__item">
+      <h2 class="joblist__title">
+        <a class="joblist__link" href="{{ job.url | url }}">{{ job.data.title }}</a>
+      </h2>
+      <p class="joblist__tag">{{ job.data.date }} | {{ job.data.tag }}</p>
+    </div>
+  {% endfor %}
+</div>
