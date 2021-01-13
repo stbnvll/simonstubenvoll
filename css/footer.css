@@ -1,5 +1,5 @@
 .footer {
-  padding: 3rem 0;
+  padding: 2rem 0;
   margin: 8rem 0 0 0;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -9,21 +9,27 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  height: 4rem;
 }
 .footer__item {
   display: flex;
-  align-items: center;
+  padding: 0.5rem
 }
 .footer__link {
   margin: 0 0.5rem;
   color: var(--color-text);
 }
 .footer__icon {
-  width: 1.6rem;
-  height: 1.6rem;
-  margin: 0 0 0 1.6rem;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 0.5rem;
+  background-size: 2.4rem;
+}
+.footer__icon--twitter {
+  background-image: var(--icon-twitter);
+}
+.footer__icon--xing {
+  background-image: var(--icon-xing);
 }
 
 /* md */
@@ -32,7 +38,9 @@
     margin: 16rem 0 0 0;
   }
   .footer__inner {
-    flex-direction: row;
-    height: auto;
+    flex-direction: initial;
+  }
+  .footer__item--right {
+    margin: 0 0 0 auto
   }
 }
