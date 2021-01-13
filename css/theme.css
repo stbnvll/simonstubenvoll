@@ -35,12 +35,18 @@
   --color-primary: #eb5757;
   --color-secondary: #bdbdbd;
   --color-border: #e0e0e0;
+
+  --icon-twitter: url(/img/icons/twitter-light.png);
+  --icon-xing: url(/img/icons/xing-light.png);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #333;
     --color-text: #fff;
+
+    --icon-twitter: url(/img/icons/twitter-dark.png);
+    --icon-xing: url(/img/icons/xing-dark.png);
   }
 }
 
