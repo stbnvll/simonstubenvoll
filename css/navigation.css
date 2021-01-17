@@ -32,6 +32,7 @@
 }
 .nav__item--active {
   text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 .nav__link {
   display: block;
