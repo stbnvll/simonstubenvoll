@@ -9,10 +9,14 @@
   </button>
 
   <ul class="nav__menu js-nav-menu" id="nav-menu">
-    {% for entry in collections.all | eleventyNavigation %}
-      <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}">
-        <a class="nav__link" href="{{ entry.url | url }}">{{ entry.title }}</a>
-      </li>
+    {% for item in collections.all | eleventyNavigation %}
+      {% if item.url %}
+        {% set isCurrent = (item.url == page.url) %}
+        {% set isParent = item.url != '/' and item.url in page.url %}
+        <li class="nav__item{% if isCurrent or isParent %} nav__item--active{% endif %}">
+          <a class="nav__link" href="{{ item.url | url }}" {% if isCurrent %}aria-current="page"{% endif %}>{{ item.title }}</a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </nav>
