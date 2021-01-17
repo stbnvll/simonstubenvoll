@@ -30,6 +30,9 @@
 .nav--open .nav__menu {
   display: block;
 }
+.nav__item--active {
+  text-decoration: underline;
+}
 .nav__link {
   display: block;
   padding: 1.2rem 3.6rem 1.2rem 1.2rem;
@@ -66,6 +69,9 @@
     width: calc(100% - 4rem);
     background-color: var(--color-border);
     transition: width 0.2s ease-in;
+  }
+  .nav__item--active {
+    text-decoration: inherit;
   }
   .nav__item--active::after,
   .nav__item--active:hover::after {
