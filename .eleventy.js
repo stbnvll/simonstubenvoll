@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
     return `${MM}/${YYYY}`;
   });
 
-  eleventyConfig.addFilter("first", function (array) {
+  eleventyConfig.addFilter("firstItem", function (array) {
     return array.slice(0, 1);
   });
 };
