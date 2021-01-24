@@ -8,7 +8,7 @@ layout: layouts/base.njk
   </header>
 
   <div class="post__content">
-    {% if tag %}<strong class="post__tag">{{ date }} | {{ tag }}</strong>{% endif %}
+    {% if tag %}<strong class="post__tag">{{ date | readableDate }} | {{ tag }}</strong>{% endif %}
     {% if lead %}<p class="post__lead">{{ lead }}</p>{% endif %}
     {{ content | safe }}
   </div>
