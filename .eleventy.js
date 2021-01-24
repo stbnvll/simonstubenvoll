@@ -24,10 +24,11 @@ module.exports = function (eleventyConfig) {
   // Filters
   eleventyConfig.addFilter("readableDate", function (iso) {
     const date = new Date(iso);
-    const MM = date.getMonth() + 1;
     const YYYY = date.getFullYear();
+    const MM = (date.getMonth() + 1).toLocaleString(undefined, {
+      minimumIntegerDigits: 2,
+    });
 
-    MM = MM.toLocaleString(undefined, { minimumIntegerDigits: 2 });
     return `${MM}/${YYYY}`;
   });
 
