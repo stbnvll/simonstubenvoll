@@ -26,9 +26,8 @@
   --container-max-width: 1200px;
   --container-narrow-max-width: 1000px;
 
-  --font-family-sans-serif: "Raleway", "HelveticaNeue", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
-  --font-family-serif: Georgia, "Times New Roman", Times, serif;
+  --font-family-sans-serif: Helvetica, sans-serif;
+  --font-family-serif: Georgia, serif;
 
   --color-bg: #fff;
   --color-text: #333;
