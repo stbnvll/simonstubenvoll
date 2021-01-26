@@ -6,7 +6,7 @@
         <h2 class="postlist__title">
           <a class="postlist__link" href="{{ post.url | url }}">{{ post.data.title }}</a>
         </h2>
-        <strong class="postlist__tag">{{ post.data.date | readableDate }} | {{ post.data.tag }}</strong>
+        <strong class="postlist__tag">{{ post.data.date | date }} | {{ post.data.tag }}</strong>
         <p class="postlist__lead">{{ post.data.lead }}</p>
       </div>
     </div>
