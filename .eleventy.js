@@ -1,12 +1,13 @@
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const cleanCss = require("clean-css");
+const terser = require("terser");
+
 const globs = { jobs: "jobs/**/*.md", posts: "posts/**/*.md" };
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
 
-  eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("js");
 
   // Collections
   eleventyConfig.addCollection("jobs", function (collection) {
@@ -22,7 +23,28 @@ module.exports = function (eleventyConfig) {
   });
 
   // Filters
-  eleventyConfig.addFilter("readableDate", function (iso) {
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new cleanCss({}).minify(code).styles;
+  });
+
+  eleventyConfig.addNunjucksAsyncFilter(
+    "jsmin",
+    async function (code, callback) {
+      try {
+        const minified = await terser.minify(code);
+        callback(null, minified.code);
+      } catch (err) {
+        console.error("Terser error: ", err);
+        callback(null, code);
+      }
+    }
+  );
+
+  eleventyConfig.addFilter("first", function (array) {
+    return array.slice(0, 1);
+  });
+
+  eleventyConfig.addFilter("date", function (iso) {
     const date = new Date(iso);
     const YYYY = date.getFullYear();
     const MM = (date.getMonth() + 1).toLocaleString(undefined, {
@@ -30,9 +52,5 @@ module.exports = function (eleventyConfig) {
     });
 
     return `${MM}/${YYYY}`;
-  });
-
-  eleventyConfig.addFilter("firstItem", function (array) {
-    return array.slice(0, 1);
   });
 };

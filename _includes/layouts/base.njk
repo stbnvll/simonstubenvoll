@@ -7,16 +7,7 @@
     <meta name="format-detection" content="telephone=no">
 
     {% include "meta.njk" %}
-
-    <link rel="stylesheet" href="{{ '/css/footer.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/hero.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/joblist.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/navigation.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/post.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/postlist.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/theme.css' | url }}">
+    {% include "css.njk" %}
   </head>
 
   <body>
@@ -27,7 +18,6 @@
     </main>
 
     {% include "footer.njk" %}
-
-    <script src="{{ '/js/navigation.js' | url }}" defer></script>
+    {% include "js.njk" %}
   </body>
 </html>
