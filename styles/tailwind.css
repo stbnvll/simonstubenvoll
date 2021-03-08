@@ -6,6 +6,7 @@
   body {
     @apply bg-white;
     @apply dark:bg-gray-800;
+    @apply font-light;
     @apply text-gray-800;
     @apply dark:text-white;
   }
@@ -26,7 +27,6 @@
     @apply text-xl;
   }
   p {
-    @apply font-light;
     @apply my-5;
   }
   a {
