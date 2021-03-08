@@ -12,7 +12,7 @@ With this sweetie here it should be different, I have already limited myself to 
 
 <figure>
   <img src="{{ '/img/posts/my-personal-website/home.jpg' | url }}">
-  <figcaption class="post__caption">Light on, light off</figcaption>
+  <figcaption class="text-xs">Light on, light off</figcaption>
 </figure>
 
 In total, I've been sitting on the site for maybe just under a month, after work on weekends and days off. It was built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a>, the styling was done by me. I wanted to keep everything as lightweight as possible, so I was able to do well without massive frameworks. You can find the repository <a href="https://github.com/stbnvll/simonstubenvoll/" target="_blank" rel="noopener noreferrer">here</a>.
