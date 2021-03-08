@@ -2,14 +2,13 @@
 layout: layouts/base.njk
 ---
 
-<article class="post" role="article" aria-labelledby="{{ title | slug }}-title">
-  <header class="post__header">
-    <h1 id="{{ title | slug }}-title" class="post__title">{{ title }}</h1>
+<article class="max-w-screen-md mx-auto" role="article" aria-labelledby="{{ title | slug }}-title">
+  <header>
+    <h1 class="mb-5" id="{{ title | slug }}-title">
+      {% if date %}<span class="font-mono font-normal">{{ date | date }}</span>{% endif %}
+      <span>{{ title }}</span>
+    </h1>
   </header>
-
-  <div class="post__content">
-    {% if tag %}<strong class="post__tag">{{ date | date }} | {{ tag }}</strong>{% endif %}
-    {% if lead %}<p class="post__lead">{{ lead }}</p>{% endif %}
-    {{ content | safe }}
-  </div>
+  
+  {{ content | safe }}
 </article>

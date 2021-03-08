@@ -1,14 +1,9 @@
-<div class="postlist">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
   {% for post in postlist %}
-    <div class="postlist__item">
-      <img class="postlist__thumb" src="{{ '/img/posts/' + post.fileSlug + '/thumb.jpg' | url }}">
-      <div class="postlist__text">
-        <h2 class="postlist__title">
-          <a class="postlist__link" href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </h2>
-        <strong class="postlist__tag">{{ post.data.date | date }} | {{ post.data.tag }}</strong>
-        <p class="postlist__lead">{{ post.data.lead }}</p>
-      </div>
-    </div>
+    <a class="md:transform md:transition-transform md:hover:-translate-y-2" href="{{ post.url | url }}">
+      <img class="mb-1" src="{{ '/img/posts/' + post.fileSlug + '/thumb.jpg' | url }}">
+      <span class="font-semibold lowercase">{{ post.data.title }}</span>
+      <span>— {{ post.data.lead }}</span>
+    </a>
   {% endfor %}
-</div>
+</div> 

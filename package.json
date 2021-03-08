@@ -1,10 +1,10 @@
 {
   "name": "simonstubenvoll",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My personal website built with 11ty.",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "start": "eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/style.css && cleancss _site/style.css -o _site/style.css"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
-    "backstopjs": "^5.1.0",
-    "clean-css": "^5.1.0",
-    "terser": "^5.6.0"
+    "autoprefixer": "^10.2.5",
+    "clean-css-cli": "^5.2.1",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
   }
 }

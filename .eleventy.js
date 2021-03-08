@@ -1,13 +1,18 @@
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const cleanCss = require("clean-css");
-const terser = require("terser");
+const htmlmin = require("html-minifier");
 
 const globs = { jobs: "jobs/**/*.md", posts: "posts/**/*.md" };
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setUseGitIgnore(false);
+
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.addPassthroughCopy("img");
+
+  eleventyConfig.addWatchTarget("./_tmp/style.css");
+
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
 
   // Collections
   eleventyConfig.addCollection("jobs", function (collection) {
@@ -23,27 +28,6 @@ module.exports = function (eleventyConfig) {
   });
 
   // Filters
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new cleanCss({}).minify(code).styles;
-  });
-
-  eleventyConfig.addNunjucksAsyncFilter(
-    "jsmin",
-    async function (code, callback) {
-      try {
-        const minified = await terser.minify(code);
-        callback(null, minified.code);
-      } catch (err) {
-        console.error("Terser error: ", err);
-        callback(null, code);
-      }
-    }
-  );
-
-  eleventyConfig.addFilter("first", function (array) {
-    return array.slice(0, 1);
-  });
-
   eleventyConfig.addFilter("date", function (iso) {
     const date = new Date(iso);
     const YYYY = date.getFullYear();
@@ -52,5 +36,28 @@ module.exports = function (eleventyConfig) {
     });
 
     return `${MM}/${YYYY}`;
+  });
+
+  // Shortcodes
+  eleventyConfig.addShortcode("version", function () {
+    return String(Date.now());
+  });
+
+  // Transforms
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    if (
+      process.env.ELEVENTY_PRODUCTION &&
+      outputPath &&
+      outputPath.endsWith(".html")
+    ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
+
+    return content;
   });
 };
