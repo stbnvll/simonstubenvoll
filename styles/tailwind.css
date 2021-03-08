@@ -26,6 +26,7 @@
     @apply text-xl;
   }
   p {
+    @apply font-light;
     @apply my-5;
   }
   a {
