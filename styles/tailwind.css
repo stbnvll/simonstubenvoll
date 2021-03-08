@@ -35,4 +35,7 @@
     @apply dark:hover:text-white;
     @qpply transition-colors;
   }
+  p a {
+    @apply underline;
+  }
 }
