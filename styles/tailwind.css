@@ -5,7 +5,7 @@
 @layer base {
   body {
     @apply bg-white;
-    @apply dark:bg-gray-800;
+    @apply dark:bg-black;
     @apply text-lg;
     @apply font-light;
     @apply text-gray-800;
@@ -34,10 +34,8 @@
     @apply underline;
   }
   a {
-    @apply text-gray-600;
-    @apply dark:text-gray-200;
-    @apply hover:text-gray-800;
-    @apply dark:hover:text-white;
+    @apply hover:text-red-600;
+    @apply dark:hover:text-red-300;
     @qpply transition-colors;
   }
   figcaption {

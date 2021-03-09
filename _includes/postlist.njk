@@ -1,6 +1,6 @@
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
   {% for post in postlist %}
-    <a class="md:transform md:transition-transform md:hover:-translate-y-2" href="{{ post.url | url }}">
+    <a class="hover:text-current md:transform md:transition-transform md:hover:-translate-y-2" href="{{ post.url | url }}">
       <img class="mb-1" src="{{ '/img/posts/' + post.fileSlug + '/thumb.jpg' | url }}">
       <span class="font-semibold lowercase">{{ post.data.title }}</span>
       <span>— {{ post.data.teaser }}</span>
