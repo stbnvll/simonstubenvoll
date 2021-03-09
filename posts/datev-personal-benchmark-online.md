@@ -11,7 +11,7 @@ The tool was released as a web application at the end of 2020, is called <a href
 
 <figure>
   <img src="{{ '/img/posts/datev-personal-benchmark-online/evaluation.jpg' | url }}">
-  <figcaption class="text-xs">
+  <figcaption>
     Employee versus comparison group
     <a href="https://www.datev.de/web/de/datev-shop/personalwirtschaft/datev-personal-benchmark-online/" target="_blank" rel="noopener noreferrer">(DATEV-Shop)</a>
   </figcaption>

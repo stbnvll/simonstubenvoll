@@ -9,7 +9,7 @@ layout: layouts/post.njk
 
 <figure>
   <img src="{{ '/img/posts/websites-of-irs-gmbh/home.jpg' | url }}">
-  <figcaption class="text-xs">
+  <figcaption>
     The first impression counts
     (<a href="https://irs-nbg.de/" target="_blank" rel="noopener noreferrer">IRS GmbH</a>)
   </figcaption>
@@ -19,7 +19,7 @@ First, the content of the individual sites had to be brought to a common denomin
 
 <figure>
   <img src="{{ '/img/posts/websites-of-irs-gmbh/sections.jpg' | url }}">
-  <figcaption class="text-xs">
+  <figcaption>
     Modules becoming sections
     <a href="https://irs-nbg.de/" target="_blank" rel="noopener noreferrer">(IRS GmbH)</a>
   </figcaption>

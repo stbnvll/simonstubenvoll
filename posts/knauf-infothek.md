@@ -13,7 +13,7 @@ So Knauf commissioned <a href="https://irs-nbg.de/" target="_blank" rel="noopene
 
 <figure>
   <img src="{{ '/img/posts/knauf-infothek/start.jpg' | url }}">
-  <figcaption class="text-xs">
+  <figcaption>
     A truly native starting page, right?
     <a href="https://apps.apple.com/de/app/knauf-infothek/id949469695/" target="_blank" rel="noopener noreferrer">(App Store)</a>
   </figcaption>
@@ -23,7 +23,7 @@ Our four-member team developed a functional UX concept for navigating through Kn
 
 <figure>
   <img src="{{ '/img/posts/knauf-infothek/collections.jpg' | url }}">
-  <figcaption class="text-xs">
+  <figcaption>
     Own collections as a new feature
     <a href="https://apps.apple.com/de/app/knauf-infothek/id949469695/" target="_blank" rel="noopener noreferrer">(App Store)</a>
   </figcaption>
