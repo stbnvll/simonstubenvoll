@@ -1,7 +1,7 @@
 ---
-title: IRS GmbH
-tag: Frontend Software Developer
 date: 2016-10
+title: IRS GmbH
+position: Frontend Software Developer
 layout: layouts/post.njk
 ---
 

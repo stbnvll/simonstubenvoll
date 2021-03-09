@@ -1,7 +1,7 @@
 ---
-title: Bolta Werke GmbH
-tag: Working Student (Internal Communication)
 date: 2015-05
+title: Bolta Werke GmbH
+position: Working Student (Internal Communication)
 layout: layouts/post.njk
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: Diehl Metall Stiftung & Co. KG
-tag: Working Student (Graphic Design)
 date: 2013-08
+title: Diehl Metall Stiftung & Co. KG
+position: Working Student (Graphic Design)
 layout: layouts/post.njk
 ---
 

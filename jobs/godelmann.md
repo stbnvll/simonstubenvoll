@@ -1,7 +1,7 @@
 ---
-title: Godelmann GmbH & Co. KG
-tag: Working Student (Graphic Design)
 date: 2016-04
+title: Godelmann GmbH & Co. KG
+position: Working Student (Graphic Design)
 layout: layouts/post.njk
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: DATEV eG
-tag: Frontend Software Developer
 date: 2019-01
+title: DATEV eG
+position: Frontend Software Developer
 layout: layouts/post.njk
 ---
 
