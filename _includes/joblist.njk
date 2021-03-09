@@ -1,11 +1,11 @@
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 gap-4">
   {% for job in joblist %}
-    <a href="{{ job.url | url }}">
-      <h2>
-        <span class="font-mono font-normal">{{ job.data.date | date }}</span>
-        <span>{{ job.data.title }}</span>
-      </h2>
-      <span>{{ job.data.tag }}</span>
+    <a class="md:flex md:items-center" href="{{ job.url | url }}">
+      <span class="font-mono text-4xl md:mr-2">{{ job.data.date | date }}</span>
+      <div>
+        <h2>{{ job.data.title }}</h2>
+        <span>{{ job.data.tag }}</span>
+      </div>
     </a>
   {% endfor %}
 </div>
