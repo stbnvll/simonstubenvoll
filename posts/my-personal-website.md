@@ -1,8 +1,7 @@
 ---
-title: My personal website
-lead: I wanted to build my own website from scratch.
-tag: Design, Code
 date: 2020-12
+title: My personal website
+teaser: I wanted to build my own website from scratch.
 layout: layouts/post.njk
 ---
 

@@ -1,8 +1,7 @@
 ---
-title: Websites of IRS GmbH
-lead: Uniform appearance for different product divisions.
-tag: Design, Code
 date: 2018-06
+title: Websites of IRS GmbH
+teaser: Uniform appearance for different product divisions.
 layout: layouts/post.njk
 ---
 
