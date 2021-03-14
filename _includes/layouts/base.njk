@@ -7,17 +7,17 @@
     <meta name="format-detection" content="telephone=no">
 
     {% include "meta.njk" %}
-    {% include "css.njk" %}
+
+    <link rel="stylesheet" href="/style.css?v={% version %}">
   </head>
 
-  <body>
+  <body class="flex flex-col min-h-screen max-w-screen-xl container sm:px-10">
     {% include "header.njk" %}
 
-    <main class="main container container--narrow" role="main">
+    <main class="flex-1 mt-20 mb-40" role="main">
       {{ content | safe }}
     </main>
 
     {% include "footer.njk" %}
-    {% include "js.njk" %}
   </body>
 </html>

@@ -1,8 +1,7 @@
 ---
-title: Knauf Infothek
-lead: Technical documentation in a native app for Android and iOS.
-tag: Design, Code
 date: 2018-12
+title: Knauf Infothek
+teaser: Technical documentation in a native app for Android and iOS.
 layout: layouts/post.njk
 ---
 
@@ -14,7 +13,7 @@ So Knauf commissioned <a href="https://irs-nbg.de/" target="_blank" rel="noopene
 
 <figure>
   <img src="{{ '/img/posts/knauf-infothek/start.jpg' | url }}">
-  <figcaption class="post__caption">
+  <figcaption>
     A truly native starting page, right?
     <a href="https://apps.apple.com/de/app/knauf-infothek/id949469695/" target="_blank" rel="noopener noreferrer">(App Store)</a>
   </figcaption>
@@ -24,7 +23,7 @@ Our four-member team developed a functional UX concept for navigating through Kn
 
 <figure>
   <img src="{{ '/img/posts/knauf-infothek/collections.jpg' | url }}">
-  <figcaption class="post__caption">
+  <figcaption>
     Own collections as a new feature
     <a href="https://apps.apple.com/de/app/knauf-infothek/id949469695/" target="_blank" rel="noopener noreferrer">(App Store)</a>
   </figcaption>

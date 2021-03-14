@@ -1,10 +1,12 @@
-<div class="joblist">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
   {% for job in joblist %}
-    <div class="joblist__item">
-      <h2 class="joblist__title">
-        <a class="joblist__link" href="{{ job.url | url }}">{{ job.data.title }}</a>
+    <div>
+      <h2>
+        <span class="font-mono font-normal">{{ job.data.date | date }}</span>
+        <span>{{ job.data.title }}</span>
+        <a class="text-gray-300 dark:text-gray-600" href="{{ job.data.website }}" target="_blank" rel="noopener noreferrer">#</a>
       </h2>
-      <p class="joblist__tag">{{ job.data.date | date }} | {{ job.data.tag }}</p>
+      <span>{{ job.data.description }}</span>
     </div>
   {% endfor %}
 </div>

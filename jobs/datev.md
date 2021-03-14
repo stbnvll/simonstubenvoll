@@ -1,10 +1,7 @@
 ---
-title: DATEV eG
-tag: Frontend Software Developer
 date: 2019-01
+title: DATEV eG
+website: https://www.datev.de/
+description: At DATEV eG, I am part of a cross-functional feature team and take on the technical leadership of front-end development. I am significantly involved in driving forward a UI for customer-oriented visualization of Big Data. I also try to drive user experience through conceptual, design and consulting work.
 layout: layouts/post.njk
 ---
-
-At <a href="https://www.datev.de/" target="_blank" rel="noopener noreferrer">DATEV eG</a> I’m part of a cross-functional feature team and take over the technical lead of the frontend. I’m significantly involved in the development of an UI for customer-oriented visualization of Big Data in the payroll area. With the emerging MVP, the company wants to expand its portfolio in the online sector and open up new sales markets.
-
-I also try to advance the user experience through conceptual, design and consulting work. I furthermore support the team in the role of a security engineer. I’m still working there today.

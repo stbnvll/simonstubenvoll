@@ -1,12 +1,19 @@
-<header class="header" role="banner">
-  <div class="header__inner container">
-    <a class="header__brand" href="{{ '/' | url }}" rel="home" aria-label="go to homepage">
-      <img class="header__avatar" src="{{ '/img/avatar.jpg' | url }}">
-      <span class="header__title">{{ metadata.title }}</span>
-    </a>
+<header class="flex justify-between py-5 sm:py-10" role="banner">
+  <a class="flex items-center hover:text-current" href="{{ '/' | url }}" rel="home" aria-label="go to homepage">
+    <img class="rounded-full h-6 sm:h-12 w-6 sm:w-12 mr-2" src="{{ '/img/avatar.jpg' | url }}">
+    <span class="font-semibold">{{ metadata.title }}</span>
+  </a>
 
-    <div class="header__nav">
-      {% include "navigation.njk" %}
-    </div>
-  </div>
+  <ul class="flex items-center justify-end">
+    {% for item in collections.all | eleventyNavigation %}
+      {% if item.url %}
+        {% set isCurrent = (item.url == page.url) %}
+        {% set isParent = item.url != '/' and item.url in page.url %}
+        <li class="ml-5 sm:ml-10">
+          <a class="font-semibold transition-colors {% if isCurrent or isParent %} text-red-600 dark:text-red-300 {% endif %}"
+            href="{{ item.url | url }}" {% if isCurrent %}aria-current="page" {% endif %}>{{ item.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </header>

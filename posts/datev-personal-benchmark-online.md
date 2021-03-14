@@ -1,8 +1,7 @@
 ---
-title: DATEV Personal-Benchmark online
-lead: An UI for customer-orientated visualization of Big Data.
-tag: Code
 date: 2020-10
+title: DATEV Personal-Benchmark online
+teaser: An UI for customer-orientated visualization of Big Data.
 layout: layouts/post.njk
 ---
 
@@ -12,7 +11,7 @@ The tool was released as a web application at the end of 2020, is called <a href
 
 <figure>
   <img src="{{ '/img/posts/datev-personal-benchmark-online/evaluation.jpg' | url }}">
-  <figcaption class="post__caption">
+  <figcaption>
     Employee versus comparison group
     <a href="https://www.datev.de/web/de/datev-shop/personalwirtschaft/datev-personal-benchmark-online/" target="_blank" rel="noopener noreferrer">(DATEV-Shop)</a>
   </figcaption>

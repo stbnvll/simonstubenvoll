@@ -2,11 +2,14 @@
 layout: layouts/base.njk
 permalink: /posts/
 eleventyNavigation:
-  key: Portfolio
+  key: portfolio.
   order: 2
 ---
 
-<h1>Portfolio</h1>
+<h1>portfolio.</h1>
+<p class="md:w-2/3">
+  Behind every project there is a little story.
+</p>
 
 {% set postlist = collections.posts %}
 {% include "postlist.njk" %}
