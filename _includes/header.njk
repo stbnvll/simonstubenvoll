@@ -10,7 +10,7 @@
         {% set isCurrent = (item.url == page.url) %}
         {% set isParent = item.url != '/' and item.url in page.url %}
         <li class="ml-5 sm:ml-10">
-          <a class="font-semibold transition-colors {% if isCurrent or isParent %} text-red-600 dark:text-red-300 {% endif %}"
+          <a class="font-semibold {% if isCurrent or isParent %} text-red-600 dark:text-red-300 {% endif %}"
             href="{{ item.url | url }}" {% if isCurrent %}aria-current="page" {% endif %}>{{ item.title }}</a>
         </li>
       {% endif %}
