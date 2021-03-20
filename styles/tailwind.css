@@ -35,7 +35,7 @@
   a {
     @apply hover:text-red-600;
     @apply dark:hover:text-red-300;
-    @qpply transition-colors;
+    @apply transition-colors;
   }
   figcaption {
     @apply text-sm;
